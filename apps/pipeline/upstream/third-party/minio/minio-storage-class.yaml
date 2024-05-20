@@ -1,0 +1,11 @@
+# storage_class.yml
+kind: StorageClass
+apiVersion: storage.k8s.io/v1
+metadata:
+  name: minio-storageclass
+provisioner: kubernetes.io/no-provisioner
+volumeBindingMode: Immediate
+parameters:
+ type: gp2 # This configures SSDs (recommended).
+allowVolumeExpansion: true
+reclaimPolicy: Retain

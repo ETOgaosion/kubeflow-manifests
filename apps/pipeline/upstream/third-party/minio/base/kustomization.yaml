@@ -4,6 +4,7 @@ namespace: kubeflow
 
 resources:
 - minio-deployment.yaml
+- minio-pv.yaml
 - minio-pvc.yaml
 - minio-service.yaml
 - mlpipeline-minio-artifact-secret.yaml

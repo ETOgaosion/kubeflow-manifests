@@ -4,6 +4,7 @@ namespace: kubeflow
 
 resources:
 - mysql-deployment.yaml
+- mysql-pv.yaml
 - mysql-pv-claim.yaml
 - mysql-service.yaml
 - mysql-serviceaccount.yaml
